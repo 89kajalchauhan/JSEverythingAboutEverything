@@ -5,5 +5,5 @@ let device = document.querySelector("#device");
 
 sel.addEventListener("change",function(dets){
   
-  device.textContent = `$`
+  device.textContent = `${dets.target.value}`
 });
