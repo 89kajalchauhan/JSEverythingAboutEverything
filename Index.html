@@ -27,13 +27,29 @@
             height: 100%;
             background-color: #222;
         }
+        input{
+            display: none;
+        }
+       #Button{
+            padding: 12px 22px;
+            background-color: rgb(41, 143, 114);
+            color: rgb(236, 238, 233);
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        #Button:hover{
+            background-color:rgb(8, 110, 81); ;
+        }
 
         
-    </style>
+    </style> 
 </head>
 <body>
     <div id="main">
-       
+      <input id="fileinp" type="file">
+      <div id="Button">
+        Upload File
+      </div>
     </div>
 
     <!-- Make sure your JS file name is 'script.js' -->
