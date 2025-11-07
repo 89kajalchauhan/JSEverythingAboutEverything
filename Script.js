@@ -21,25 +21,19 @@
 //});
 
 
-let Button = document.querySelector("#Button");
- let fileinp = document.querySelector("#fileinp");
+ let form =  document.querySelector("form");
+ let inputs = document.querySelectorAll("input");
 
-Button.addEventListener("click", function(){
-   fileinp.click();
-     
+ form.addEventListener("submit", function(dets){
+     dets.preventDefault();
 
-});
-
-fileinp.addEventListener("change", function(dets){
-  
-    const file = dets.target.files[0],
-    if (file) {
-     Button.textContent = file.name; 
-    }
-   }
-  
-);
-
+    console.log(
+        inputs[0].value,
+        inputs[1].value,
+        inputs[2].value,
+        inputs[3].value
+    );
+ });
 
 
 
