@@ -1,4 +1,4 @@
- let form = document.querySelector("form");
+/*let form = document.querySelector("form");
  let input = document.querySelectorAll("input");
  let main = document.querySelector("#main");
 
@@ -45,20 +45,32 @@ form.addEventListener("submit", function(dets){
     inp.vale = "";
     }
   })
- });
+ });*/
 
 
 
+/*let abcd = document.querySelector("#abcd");
+
+abcd.addEventListener("mouseover", function(){
+    abcd.style.backgroundColor = "yellow";
+});
+
+abcd.addEventListener("mouseout", function(){
+    abcd.style.backgroundColor = "red";
+});*/
 
 
 
+/*let abcd = document.querySelector("#abcd");
 
+window.addEventListener("mousemove", function(dets){
 
+abcd.style.top = dets.clientY + "px";   // y axiske liye top kaam krta h kyoki top to buttom jate h yaxix m 
+abcd.style.left = dets.clientX + "px";  // x axis ke liye left to right kaam krta h kyoki left to right jaate h 
 
+});*/
 
+window.addEventListener("keydown", function(){
 
-
-
-
-
-
+  console.log("key pressed:",event.key );
+});
