@@ -70,7 +70,59 @@ abcd.style.left = dets.clientX + "px";  // x axis ke liye left to right kaam krt
 
 });*/
 
-window.addEventListener("keydown", function(){
+/*window.addEventListener("keydown", function(){
 
   console.log("key pressed:",event.key );
+});*/
+
+
+
+/*let abcd = document.querySelector("#abcd");
+
+abcd.addEventListener("click", function(dets){
+
+console.log(dets);
+});*/
+
+
+/*let form = document.querySelector("form");
+
+form.addEventListener("submit", function(dets){
+
+  dets.preventDefault();
+});*/
+
+
+
+/*document.querySelector("#nav")
+.addEventListener("click", function(){
+   alert("clicked");
+
+});*/
+
+
+/*let ul = document.querySelector("ul");
+
+ul.addEventListener("click", function(dets){
+
+  dets.target.classList.toggle("lt");
+
+});*/
+
+let inp = document.querySelector("input");
+
+inp.addEventListener("input", function(){
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
