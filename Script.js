@@ -109,20 +109,107 @@ ul.addEventListener("click", function(dets){
 
 });*/
 
-let inp = document.querySelector("input");
+/*let inp = document.querySelector("input");
 
 inp.addEventListener("input", function(){
 
 
 
+});*/
+
+/*let nm = document.querySelector("#name");
+let form = document.querySelector("form");
+
+form.addEventListener("submit", function(dets) {
+  dets.preventDefault();
+
+  const re = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  let ans = re.test("kajalchauhan892079@gmail.com");  // <-- use re instead of regex
+
+  console.log(ans);
+
+
+
+
+
+
+
+
+
+
+
+ /*dets.preventDefault();
+if (nm.value.lenght <= 2){
+  document.querySelector("#hide").style.display = "initial";
+}
+else{
+  document.querySelector("#hide").style.display = "none";
+}
+
+});*/
+
+
+
+
+//  note:ye neeche mne html ka code likh diya h //
+/*<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email & Password Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Email & Password Validator</h2>
+    <form id="form">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <small id="email-error"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <small id="password-error"></small>
+      </div>
+
+      <button type="submit">Validate</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>*/
+
+
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let form = document.querySelector("#form");
+
+form.addEventListener("submit", function(dets){
+  dets.preventDefault();
+
+  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+  let emailans = emailRegex.test(email.value);
+  let passwrdans = passwordRegex.test(password.value);
+
+  if(!emailans){
+    document.querySelector("#email-error").textContent = "Email is incorrect";
+  } else {
+    document.querySelector("#email-error").textContent = "";
+  }
+
+  if(!passwrdans){
+    document.querySelector("#password-error").textContent = "Password is incorrect";
+  } else {
+    document.querySelector("#password-error").textContent = "";
+  }
 });
 
 
-
-
-
-
-
-
-
-
+ 
