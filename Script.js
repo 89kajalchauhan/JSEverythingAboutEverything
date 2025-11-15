@@ -129,15 +129,6 @@ form.addEventListener("submit", function(dets) {
   console.log(ans);
 
 
-
-
-
-
-
-
-
-
-
  /*dets.preventDefault();
 if (nm.value.lenght <= 2){
   document.querySelector("#hide").style.display = "initial";
@@ -185,7 +176,7 @@ else{
 </html>*/
 
 
-let email = document.querySelector("#email");
+/*let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let form = document.querySelector("#form");
 
@@ -209,7 +200,34 @@ form.addEventListener("submit", function(dets){
   } else {
     document.querySelector("#password-error").textContent = "";
   }
-});
+});*/
 
 
- 
+ /*let lm = setInterval(function(){
+
+    console.log("Hello");
+}, 5000);
+
+clearInterval(lm); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
